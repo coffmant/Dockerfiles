@@ -6,6 +6,6 @@ RUN git clone https://github.com/peterpakos/checkipaconsistency.git
 
 WORKDIR checkipaconsistency
 
-pip install -r requirements.txt
+RUN pip install -r requirements.txt
 
 ENTRYPOINT ["/checkipaconsistency/cipa"]
