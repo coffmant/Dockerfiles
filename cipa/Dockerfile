@@ -6,6 +6,8 @@ RUN yum -y install python-dns python-ldap python-prettytable python-pip python-d
 
 RUN git clone https://github.com/peterpakos/checkipaconsistency.git
 
+RUN pip install --upgrade pip
+
 WORKDIR checkipaconsistency
 
 RUN pip install -r requirements.txt
