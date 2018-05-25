@@ -6,8 +6,6 @@ RUN yum -y install python-pip openldap-devel git && yum clean all
 
 RUN git clone https://github.com/peterpakos/checkipaconsistency.git
 
-RUN pip install --upgrade pip
-
 WORKDIR checkipaconsistency
 
 RUN pip install -r requirements.txt
